@@ -505,7 +505,7 @@ footer nav a:hover {
     
     .learn {
         background-color: darkgray;
-        height: 37.5rem;
+        height: 38.5rem;
         width: 100%;
     }
 
@@ -541,7 +541,7 @@ footer nav a:hover {
         line-height: 1.5;
         color: #33322E;
         margin-top: -1rem;
-        padding-bottom: 1.25rem;
+        padding: 1.5rem 0;
     }
 
     .text-wrapper #desc-text {
@@ -550,7 +550,7 @@ footer nav a:hover {
         font-size: 0.9rem;
         line-height: 1.5;
         margin-top: -1.5rem;
-        padding: 0.5rem 0;
+        padding-bottom: 1rem;
     }
 
     
