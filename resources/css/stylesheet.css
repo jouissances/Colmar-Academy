@@ -51,17 +51,23 @@ header nav a {
 /* Section CSS: Learn Something */
 
 .learn {
-    background-color: lightgray;
 }
-
 .learn-wrapper {
-    padding: 2rem 1.5rem;
+    background-color: darkgray;
     display: flex;
-    height: 30rem;
+    flex-direction: row;
 }
 
-.learn img {
-    max-width: 60%;
+.learn-wrapper .column-left-wrapper {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.learn-wrapper .column-left-wrapper img {
+    max-width: 100%;
+    height: auto;
+    padding: 2rem 1rem 2rem 1.5rem;
 }
 
 .text-wrapper {
@@ -69,7 +75,7 @@ header nav a {
     clear: left;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     padding: 5rem 2rem;
     margin-left: 1rem;
@@ -79,8 +85,10 @@ header nav a {
 #header-text {
     font-family: "Poppins";
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    line-height: 3rem;
     color: #33322E;
+    padding-bottom: 2rem;
 }
 
 #desc-text {
@@ -88,6 +96,7 @@ header nav a {
     font-weight: 100;
     font-size: 0.9rem;
     line-height: 1.2;
+    padding-bottom: 2rem;
 }
    
 .start-btn {
@@ -117,7 +126,7 @@ header nav a {
 	content: '';
 	position: absolute;
 	top: 2px;
-	left: -15px;
+	left: -16px;
 	width: 120%;
 	height: 93%;
 	border: 2px solid;
@@ -149,7 +158,7 @@ header nav a {
 	transition-delay: 0.3s;
 }
 .start-btn a:hover::before {
-	transform: translate3d(0, -9%, 0);
+	transform: translate3d(0, -10%, 0);
 }
 
 .start-btn a:hover > span {
@@ -161,7 +170,6 @@ header nav a {
 /* Section CSS: Practice Everyday */
 
 .practice {
-    
 }
 
 .practice-wrapper {
@@ -171,7 +179,7 @@ header nav a {
 }
 
 .practice-wrapper .column-left-wrapper {
-    width: 62.5%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     padding-right: 1.5rem;
@@ -497,19 +505,24 @@ footer nav a:hover {
     }
     
     .learn {
-        background-color: lightgray;
-        height: 32rem;
+        background-color: darkgray;
+        height: 36rem;
+        width: 100%;
     }
 
     .learn-wrapper {
+        width: 100%;
         display: flex;
-        padding: 0;
         flex-direction: column;
     }
 
-    .learn img {
-        max-width: 100%;
-        max-height: 55%;
+    .learn-wrapper img {
+        min-width: 167%;
+        position: relative;
+        padding: 0;
+        margin: 0;
+        top: -2rem;
+        left: -1.5rem;
     }
     
     .text-wrapper {
@@ -517,8 +530,9 @@ footer nav a:hover {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        padding: 0 1.5rem;
+        margin-top: -1rem;
         width: 80%;
-        padding: 0 1rem;
     } 
 
     .text-wrapper #header-text {
@@ -527,7 +541,6 @@ footer nav a:hover {
         font-size: 1.5rem;
         line-height: 1.5;
         color: #33322E;
-        margin-top: 1rem;
     }
 
     .text-wrapper #desc-text {
@@ -535,7 +548,8 @@ footer nav a:hover {
         font-weight: 100;
         font-size: 0.9rem;
         line-height: 1.5;
-        margin: 0.5rem 0;
+        margin-top: -1rem;
+        margin-bottom: -0.75rem;
     }
     
     .practice-wrapper .column-left-wrapper {
@@ -548,7 +562,7 @@ footer nav a:hover {
     
     .practice-wrapper .mobile-column-right-wrapper {
         width: 100%;
-        padding: 0 0 2rem 0;
+        padding: 2rem 0 2rem 0;
         display: flex;
         flex-direction: column;
     }
