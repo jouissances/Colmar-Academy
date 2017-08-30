@@ -39,10 +39,11 @@ header {
     font-weight: 300;
 }
 
-nav a {
+header nav a {
     margin-left: 1rem;
     font-family: "Roboto";
     font-size: 0.8rem;
+    letter-spacing: 0.03rem;
     text-decoration: none;
     color: dimgray;
 }
@@ -169,58 +170,58 @@ nav a {
     flex-direction: row;
 }
 
-.column-left-wrapper {
+.practice-wrapper .column-left-wrapper {
     width: 62.5%;
     display: flex;
     flex-direction: column;
     padding-right: 1.5rem;
 }
 
-.column-left-wrapper img {
+.practice-wrapper .column-left-wrapper img {
     max-width: 100%;
     height: auto;
     padding: 2rem 0 2rem 1.5rem;
 
 }
 
-.column-left-wrapper #header-text {
+.practice-wrapper .column-left-wrapper #header-text {
     padding: 1rem 0 1.5rem 1.5rem;
 }
 
-.column-left-wrapper #desc-text {
+.practice-wrapper .column-left-wrapper #desc-text {
     padding-left: 1.5rem;    
 }
 
-.column-left-wrapper p {
+.practice-wrapper .column-left-wrapper p {
     font-family: sans-serif;
     font-size: 0.8rem;
     text-align: right;
     padding: 1rem 0 1.5rem 1.5rem;   
 }
 
-.column-right-wrapper {
+.practice-wrapper .column-right-wrapper {
     padding: 1rem 0 2rem 0;
     width: 40%;
     height: 100%;
     border-left: 1px solid lightgray;
 }
 
-.column-right-wrapper .info-row:last-child {
+.practice-wrapper .column-right-wrapper .info-row:last-child {
     background-color: lightgray;
 }
 
-.info-row {
+.practice-wrapper .info-row {
     display: inline-flex;
     border-bottom: 1px solid lightgray;
 }
 
-.info-row img {
+.practice-wrapper .info-row img {
     width: 35%;
     height: 35%;
     padding: 1rem 1rem;
 }
 
-.info-box {
+.practice-wrapper .info-box {
     width: 65%;
     display: flex;
     flex-direction: column;
@@ -228,7 +229,7 @@ nav a {
     padding-left: 1rem;
 }
 
-.info-box #desc-text {
+.practice-wrapper .info-box #desc-text {
     width: 80%;
     padding: 0.5rem 0;
 }
@@ -308,11 +309,12 @@ nav a {
 }
 
 #course-desc #course-info {
-    display: block;
+    display: inline-block;
+    width: 100%;
 }
 
 #course-desc #course-info #modules {
-
+    width: 100%;
 } 
 
 #course-desc #course-info #modules a {
@@ -444,5 +446,190 @@ footer {
     background-color: #f5f5f5;
     display: flex;
     justify-content: space-between;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: dimgray;
+    padding: 0 0.25rem;
+}
+
+footer nav a:hover {
+    color: darkslategray;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1600px) {
+    .mobile-top-nav {
+        display: none;
+    }
+    
+    .mobile-column-right-wrapper {
+        display: none;
+    }
+    
+    .mobile-courses-wrapper {
+        display: none;
+    }
+
+    .mobile-exhibit-wrapper {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+     header {
+        width: auto;
+    }
+    
+    .logo,
+    .top-nav {
+        display: none;
+    }
+    
+    .mobile-top-nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    
+    .learn {
+        background-color: lightgray;
+        height: 32rem;
+    }
+
+    .learn-wrapper {
+        display: flex;
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .learn img {
+        max-width: 100%;
+        max-height: 55%;
+    }
+    
+    .text-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 80%;
+        padding: 0 1rem;
+    } 
+
+    .text-wrapper #header-text {
+        font-family: "Poppins";
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 1.5;
+        color: #33322E;
+        margin-top: 1rem;
+    }
+
+    .text-wrapper #desc-text {
+        font-family: "Roboto";
+        font-weight: 100;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin: 0.5rem 0;
+    }
+    
+    .practice-wrapper .column-left-wrapper {
+        display: none;
+    }
+
+    .practice-wrapper .column-right-wrapper {
+        display: none;
+    }
+    
+    .practice-wrapper .mobile-column-right-wrapper {
+        width: 100%;
+        padding: 0 0 2rem 0;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .practice-wrapper .mobile-column-right-wrapper .mobile-info-row img {
+        width: 90%;
+        padding: 1rem;
+    }
+    
+    .practice-wrapper .mobile-column-right-wrapper .mobile-info-row {
+        display: block;
+    }
+    
+    .practice-wrapper .mobile-info-box {
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 2.5rem;
+    }
+
+    .practice-wrapper .mobile-info-box #desc-text {
+        width: 100%;
+        padding: 0.5rem 0;
+        font-size: 0.75rem
+    }
+
+    .practice-wrapper #info-title {
+        font-family: "Poppins";
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    
+    .courses-wrapper {
+        display: none;
+    }
+    
+    .mobile-courses-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #mobile-course {
+    }
+    
+    #mobile-course a {
+        font-family: "Roboto";
+        text-decoration: none;
+        color: darkslategray;
+        background-color: lightgray;
+        line-height: 3.5;
+        border-radius: 0.5rem;
+        width: 100%;
+        padding: 1rem;  
+        transition: all 400ms ease-in 10ms;
+    }
+    
+    #mobile-course a:hover {
+        color: #ffffff;
+        background-color: darkslategray; 
+    }
+    
+    .exhibit-wrapper {
+        display: none;
+    }
+    
+    .mobile-exhibit-wrapper {
+        display: block;
+        max-width: 100%;
+    }
+    
+    #copyright {
+        padding: 2rem 0 0 0;
+        margin-bottom: -1.5rem;
+    }
+    
+    #footer-nav {
+        display: none;
+    }
+    
 }
 
