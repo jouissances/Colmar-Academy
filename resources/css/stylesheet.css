@@ -550,6 +550,7 @@ footer nav a:hover {
         line-height: 1.5;
         margin-top: -1rem;
         margin-bottom: -0.75rem;
+        padding: 0.5rem 0;
     }
     
     .practice-wrapper .column-left-wrapper {
