@@ -541,6 +541,7 @@ footer nav a:hover {
         font-size: 1.5rem;
         line-height: 1.5;
         color: #33322E;
+        margin-top: -1rem;
     }
 
     .text-wrapper #desc-text {
@@ -548,7 +549,7 @@ footer nav a:hover {
         font-weight: 100;
         font-size: 0.9rem;
         line-height: 1.5;
-        margin-top: -1rem;
+        margin-top: -1.5rem;
         margin-bottom: -0.75rem;
         padding: 0.5rem 0;
     }
