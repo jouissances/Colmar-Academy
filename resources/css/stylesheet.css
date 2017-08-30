@@ -505,7 +505,7 @@ footer nav a:hover {
     
     .learn {
         background-color: darkgray;
-        height: 37rem;
+        height: 35.5rem;
         width: 100%;
     }
 
@@ -530,7 +530,7 @@ footer nav a:hover {
         justify-content: space-around;
         align-items: center;
         padding: 0 1.5rem;
-        margin-top: -2rem;
+        margin-top: -3rem;
         width: 80%;
     } 
 
